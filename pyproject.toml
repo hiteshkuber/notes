@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "notes"
+version = "0.1.0"
+description = "Small project using python click"
+authors = ["Hitesh Kuber <hiteshkuber@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+notes = "notes:cli" # entry point to cli
